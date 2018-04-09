@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>Stencil Demos</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <script src="/build/app-library.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <app-card title="Card 1">
+      <p>This is a card's content. </p>
+      <button class="btn btn-primary">OK</button>
+    </app-card>
+    <app-card title="Login Form">
+      <form>
+        <div>
+          <app-field id='firstName' label='First Name' type='text' />
+          <app-field id='lastName' label='Last Name' type='text' />
+          <app-field id='username' label='Username' type='text' />
+          <app-field id='password' label='Password' type='password' />
+        </div>
+        <button class="btn btn-primary">Submit</button>
+      </form>
+    </app-card>
+
+    <app-counter-card id="appCounter" />
+    <script type="text/javaScript">
+      var elem = document.getElementById("appCounter");
+      elem.addEventListener('countChanged', e => console.log(e.detail.oldValue + " " + e.detail.newValue));
+    </script>
+  </div>
+</body>
+
+</html>

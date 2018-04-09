@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Using Templates</title>
+        <script src='template.js' defer></script>
+    </head>
+    <body>
+        <template id="panel">
+            <style>
+                .container {
+                    width: 400px;
+                    border: 1px black solid;
+                    box-shadow: 3px 3px #666;
+                    margin-bottom: 10px;
+                    padding: 5px;
+                }
+            </style>
+            <div class="container">
+                <h2><slot name="title">Title Goes Here</slot></h2>
+                <div>
+                    <slot name="content">Content goes here</slot>
+                </div>
+            </div>
+        </template>
+
+        <content-panel>
+            <span slot="title">Panel 1</span>
+            <p slot="content">This is some epic panel content</p>
+        </content-panel>
+        <content-panel>
+            <span slot="title">Panel 2</span>
+            <p slot="content">This is some more panel content</p>
+        </content-panel>
+    </body>
+</html>
