@@ -9,9 +9,9 @@ export class BootstrapCard {
 
     render(){
         return (
-            <div class="card">
-                <h5 class="card-header">{this.title}</h5>  
-                <div class="card-body">
+            <div class='card'>
+                <h5 class='card-header'>{this.title}</h5>  
+                <div class='card-body'>
                     <slot />
                 </div>
             </div>

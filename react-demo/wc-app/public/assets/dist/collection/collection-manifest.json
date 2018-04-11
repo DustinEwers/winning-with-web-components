@@ -1,0 +1,84 @@
+{
+  "components": [
+    {
+      "tag": "app-card",
+      "dependencies": [],
+      "componentClass": "BootstrapCard",
+      "componentPath": "components/app-card/app-card.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/app-card/app-card.css"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "title",
+          "type": "String",
+          "attr": "title"
+        }
+      ]
+    },
+    {
+      "tag": "app-counter-card",
+      "dependencies": [],
+      "componentClass": "CounterCard",
+      "componentPath": "components/app-counter/app-counter.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/app-counter/app-counter-card.css"
+          ]
+        }
+      },
+      "states": [
+        {
+          "name": "currentCount"
+        }
+      ],
+      "events": [
+        {
+          "event": "countChanged"
+        }
+      ]
+    },
+    {
+      "tag": "app-field",
+      "dependencies": [],
+      "componentClass": "FormField",
+      "componentPath": "components/app-field/app-field.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/app-field/app-field.css"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "id",
+          "type": "String",
+          "attr": "id"
+        },
+        {
+          "name": "label",
+          "type": "String",
+          "attr": "label"
+        },
+        {
+          "name": "type",
+          "type": "String",
+          "attr": "type"
+        }
+      ]
+    }
+  ],
+  "collections": [],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.7.7",
+    "typescriptVersion": "2.7.2"
+  },
+  "bundles": []
+}

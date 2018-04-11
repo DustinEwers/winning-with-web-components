@@ -1,0 +1,2 @@
+/*! Built with http://stenciljs.com */
+const{h:t}=window.AppLibrary;class r{render(){return t("div",{class:"card"},t("h5",{class:"card-header"},this.title),t("div",{class:"card-body"},t("slot",null)))}static get is(){return"app-card"}static get properties(){return{title:{type:String,attr:"title"}}}static get style(){return".card{margin-bottom:10px}"}}export{r as AppCard};
