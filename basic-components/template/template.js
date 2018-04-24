@@ -7,7 +7,6 @@ class Panel extends HTMLElement {
   
         const shadowRoot = this.attachShadow({mode: 'open'})
           .appendChild(templateContent.cloneNode(true));
-
     }
 }
 

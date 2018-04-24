@@ -6,7 +6,7 @@ import { Component, State, Event, EventEmitter } from '@stencil/core';
 })
 export class CounterCard {
     @State() currentCount: number = 0;
-    @Event() countChanged: EventEmitter
+    @Event() countChanged: EventEmitter;
 
     componentWillLoad() {
         console.log('The counter component is about to be rendered');
@@ -25,7 +25,7 @@ export class CounterCard {
 
     componentDidUnload() {
         console.log('The view has been removed from the DOM');
-      }
+    }
 
     changeCount(increment) {
         const oldVal = this.currentCount;
