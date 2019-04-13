@@ -35,14 +35,11 @@ export class CounterCard {
 
     render() {
         return (
-            <div class='card'>
-                <h5 class='card-header'>Counter</h5>
-                <div class='card-body'>
-                    <p>Current Count: {this.currentCount}</p>
+            <app-card cardTitle="Counter">
+                <p>Current Count: {this.currentCount}</p>
                     <button class='btn btn-primary' onClick={() => this.changeCount(1)}>Increment</button>
                     <button class='btn btn-warning' onClick={() => this.changeCount(-1)}>Decrement</button>
-                </div>
-            </div>
+            </app-card>
         );
     }
 }

@@ -5,13 +5,13 @@ import { Component, Prop } from '@stencil/core';
     styleUrl: 'app-card.css'
 })
 export class BootstrapCard {
-    @Prop() title: string;
+    @Prop() cardTitle: string;
 
     render(){
         return (
             <div class='card'>
-                <h5 class='card-header'>{this.title}</h5>  
-                <div class='card-body'>
+                <h5>{this.cardTitle}</h5>  
+                <div>
                     <slot />
                 </div>
             </div>

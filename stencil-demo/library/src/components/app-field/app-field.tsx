@@ -11,7 +11,7 @@ export class FormField {
 
     render() {
         return (
-            <div class='form-container form-group'>
+            <div class='app-field'>
                 <label htmlFor={this.id}>{this.label}</label>
                 <input  id={this.id} type={this.type} class='form-control' />
             </div>

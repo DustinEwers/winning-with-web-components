@@ -13,10 +13,10 @@ import '@stencil/core';
 export namespace Components {
 
   interface AppCard {
-    'title': string;
+    'cardTitle': string;
   }
   interface AppCardAttributes extends StencilHTMLAttributes {
-    'title'?: string;
+    'cardTitle'?: string;
   }
 
   interface AppCounterCard {}

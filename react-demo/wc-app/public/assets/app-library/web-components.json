@@ -1,0 +1,41 @@
+{
+  "tags": [
+    {
+      "label": "app-card",
+      "description": "",
+      "attributes": [
+        {
+          "label": "card-title",
+          "description": "",
+          "required": false
+        }
+      ]
+    },
+    {
+      "label": "app-counter-card",
+      "description": "",
+      "attributes": []
+    },
+    {
+      "label": "app-field",
+      "description": "",
+      "attributes": [
+        {
+          "label": "id",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "label",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "type",
+          "description": "",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

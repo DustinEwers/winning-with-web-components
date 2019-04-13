@@ -5,7 +5,7 @@ class App extends Component {
   render() {
     return (
     <div className="container">
-      <app-card title="Login Form">
+      <app-card id="login-form" title="Login Form">
         <form>
           <div>
             <app-field id="firstName" label="First Name" type="text" />
