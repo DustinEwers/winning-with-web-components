@@ -33,5 +33,5 @@ class Field extends HTMLElement {
     }
 }
 
-// Adding the element so it can be used. Note that custom elements have to have a hyphated name.
+// Adding the element so it can be used. Note that custom elements have to have a hyphened name.
 customElements.define('input-field', Field);
