@@ -5,7 +5,7 @@ class Panel extends HTMLElement {
         let template = document.getElementById('panel');
         let templateContent = template.content;
   
-        const shadowRoot = this.attachShadow({mode: 'open'})
+        this.attachShadow({mode: 'open'})
           .appendChild(templateContent.cloneNode(true));
     }
 }
